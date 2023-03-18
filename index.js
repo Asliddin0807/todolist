@@ -19,7 +19,9 @@ app.use(express.json())
 app.use('/api/user', userRoutes)
 app.use('/api/tasks', tasksRoutes)
 
-
+app.get('/', async(req, res) => {
+    res.json('Salom olam')
+})
 
 const PORT = process.env.PORT || 8000
 app.listen(PORT, () => {
