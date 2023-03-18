@@ -20,7 +20,7 @@ app.use('/api/user', userRoutes)
 app.use('/api/tasks', tasksRoutes)
 
 app.get('/', async(req, res) => {
-    res.render('api/user')
+    res.json('Salom olam')
     
 })
 
