@@ -21,6 +21,7 @@ app.use('/api/tasks', tasksRoutes)
 
 app.get('/', async(req, res) => {
     res.render('api/user')
+    
 })
 
 const PORT = process.env.PORT || 8000
